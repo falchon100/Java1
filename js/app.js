@@ -213,3 +213,201 @@ for (let index = 0; index < numero; index++) {
 alert(`lado`);
 } */
     
+
+
+/* let nombreclave= "voldemort"
+let nombre = prompt('ingrese un nombre');
+
+while (nombreclave !=nombre) {
+ nombre =    prompt('ingrese otro nombre ');
+}
+
+alert('') */
+
+/* let entrada    = prompt("INGRESAR NOMBRE");
+let ingresados = '';
+while (entrada != 'Voldemort') {
+    ingresados += entrada +"\n";
+    entrada     = prompt("INGRESAR NOMBRE");
+}
+alert(ingresados);
+ */
+/* 
+Solicitar al usuario un (1) número de forma consecutiva, hasta que se ingrese “ESC”. Generar una única salida compuesta por los siguientes productos, según el valor ingresado en cada ciclo:
+“Tomate” si es 1.
+“Papa” si es 2.
+“Carne” si es 3.
+“Pollo” si es 4.
+ */
+
+/* let numero =parseInt(prompt('ingrese un numero '));
+while (numero !="ESC") { 
+
+   switch (numero) {
+    case 1:
+        alert('tomate');
+        break;
+   case 2:
+   alert('papa');
+    default:
+        alert('error')
+        break;
+   }
+} */
+
+
+  /*  let entrada =  prompt("SELECCIONAR PRODUCTO DE 1 A 4");
+while (entrada != 'ESC') {
+    switch (entrada) {
+        case "1":
+            alert("Tomate");
+            break;
+        case "2":
+            alert("Papa");
+            break;
+        case "3":
+            alert("Carne");
+            break;
+        case "4":
+            alert("Pollo");
+            break;
+        default:
+            alert("Error");
+            break;
+    }
+    entrada = prompt("SELECCIONAR PRODUCTO DE 1 A 4");
+}
+ */
+/* 
+function Persona(nombre,edad,calle,altura,){ 
+    this.nombre =nombre;
+    this.edad = edad ;
+    this.calle = calle ;
+    this.altura = altura;
+    this.ladrar =function(){console.log('holaaa')}
+}
+
+
+const persona1= new Persona("angel",31,"moreno",178)
+persona1.ladrar()
+
+console.log(persona1)
+ */
+
+
+/* ejemplo de funcion contructora  */
+
+/* function Persona(info){
+    this.nombre=info.nombre;
+    this.apellido=info.apellido;
+    this.edad=info.edad;
+
+}
+
+Persona.prototype.correr = function(){
+    console.log('esto es lo que hace correr')
+}
+Persona.prototype.saltar = function (){
+    console.log('lo que hago es saltar')
+}
+
+const personita1 = new Persona({nombre:"angel" , apellido :"san luis", edad:20})
+const persona2 = new Persona({nombre:"matias",apellido:"vicente", edad: 30})
+
+console.log(personita1); */
+
+ /* ejemplo de clase */
+
+
+/* class Futbolista{
+    constructor(nombre,apellido,edad,equipo){
+        this.nombre= nombre;
+        this.apellido =apellido;
+        this.edad=edad;
+        this.equipo=equipo;
+    }
+
+
+patear(){
+    console('Aca esta pateando fuerte');
+}
+
+rematar(){
+    console('aca remata fuerte');
+}
+}
+
+const messi = new Futbolista ("lionel","messi",34,"Psg"),
+ronaldo= new Futbolista('ronaldo',"Cristiano",35,"juventus");
+
+console.log(messi);
+console.log(ronaldo); */
+
+
+/* const array = [1,2,3];
+array.push("putito");
+array.push("agregue otro");
+array.push(2)
+
+ */
+
+/* const perros = ["caniche","doberman","colli"];
+const gatos = ["siames","normal","negro"];
+const mascotas = perros.concat(gatos);
+
+const perros2 =mascotas.slice(0,3); */
+
+/* alert(mascotas.indexOf("siames"))
+alert(mascotas.includes("caniche"))
+ */
+
+
+/* for (let index = 0; index < perros2.length; index++) {
+  alert(mascotas.reverse(index))
+    
+} */
+
+
+/* const listadenombres =[];
+let cantidad =5 ;
+do {
+    let entrada =prompt('ingresar nombre');
+    listadenombres.push(entrada.toUpperCase());
+    console.log(listadenombres.length);
+    
+} while (listadenombres.length !=cantidad)
+const nuevalista= listadenombres.concat(["ana","emma"]);
+alert(nuevalista.join("\n")); */
+
+/* const nombres = ["angel","sofia","juan","martin","lucas"];
+console.log(nombres.length ) */
+/* const eliminar = (nombre) => {
+    let index = nombres.indexof(nombre)
+    if (index != -1 ){
+        nombres.splice(index, 1)
+    }
+}
+eliminar("sofia")
+
+alert(nombres) */
+
+/* class Producto {
+    constructor (nombre,precio){
+        this.nombre = nombre.toUpperCase();
+        this.precio = parseFloat(precio);
+        this.vendido = false;
+    }
+    sumaiva() {
+        this.precio = this.precio *1.21;
+    }
+}
+
+const productos =[];
+productos.push(new Producto("arroz","125"));
+productos.push(new Producto("fideo","70"));
+productos.push(new Producto("pan","50"));
+
+for (const producto of productos) 
+    producto.sumaiva();
+     */
+    
